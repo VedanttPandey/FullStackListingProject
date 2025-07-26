@@ -81,6 +81,9 @@ app.use("/",userRouter);
  
 //show route for a partcular id
 app.get("/listings/:id", wrapAsync (showListing));
+app.get('/', (req, res) => {
+  res.redirect('/listing'); // redirects to your working route
+});
 
 // Central error-handling middleware
 app.use((err, req, res, next) => {
