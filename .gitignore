@@ -1,0 +1,4 @@
+.env
+node_modules/
+steps.note
+**/.DS_Store
